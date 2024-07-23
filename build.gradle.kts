@@ -23,7 +23,6 @@ application {
 repositories {
     mavenCentral()
 }
-
 dependencies {
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-server-host-common-jvm")
@@ -35,5 +34,7 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     testImplementation("io.ktor:ktor-server-test-host:$ktor_version")
+    testImplementation("io.ktor:ktor-server-tests:2.0.0")
+    testImplementation("com.jayway.jsonpath:json-path:2.9.0")
     testImplementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
 }
